@@ -1,0 +1,14 @@
+from Cliente import Cliente  # Importando a classe Cliente
+from Conta import Conta      # Importando a classe Conta
+
+# Criando uma instância da classe Cliente
+c1 = Cliente("Bruno Assis", "1111-2222")
+
+# Criando uma instância da classe Conta usando o objeto Cliente
+conta = Conta(c1.get_nome(), "1111-2222")
+
+# Realizando operações na conta
+
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
